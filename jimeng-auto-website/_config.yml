@@ -1,8 +1,8 @@
 # Site settings
 title: "常州吉盟机电控制系统有限公司"
 description: "专业自动化产品供应商 - 施耐德、西门子、SICK现货库存"
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jimeng-auto.github.io" # the base hostname & protocol for your site
+baseurl: "/jimeng-auto-website" # the subpath of your site, e.g. /blog
+url: "https://jackliu2026.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
