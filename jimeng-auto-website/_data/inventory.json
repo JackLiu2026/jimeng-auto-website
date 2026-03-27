@@ -1,0 +1,176 @@
+{
+  "last_updated": "2026-03-27 08:08",
+  "total_items": 9,
+  "brands": {
+    "SICK": [
+      {
+        "品牌": "SICK",
+        "型号": "DBS50E-S5EK00500",
+        "品名": "编码器",
+        "数量": 8,
+        "单价": 4500,
+        "brand_en": "SICK",
+        "product_name_en": "Encoder",
+        "last_updated": "2026-03-27 08:08"
+      },
+      {
+        "品牌": "SICK",
+        "型号": "VT12T-2P430",
+        "品名": "光电传感器",
+        "数量": 17,
+        "单价": 1500,
+        "brand_en": "SICK",
+        "product_name_en": "Photoelectric Sensor",
+        "last_updated": "2026-03-27 08:08"
+      },
+      {
+        "品牌": "SICK",
+        "型号": "GL10-P4212",
+        "品名": "光电传感器",
+        "数量": 120,
+        "单价": 150,
+        "brand_en": "SICK",
+        "product_name_en": "Photoelectric Sensor",
+        "last_updated": "2026-03-27 08:08"
+      },
+      {
+        "品牌": "SICK",
+        "型号": "DL100-21AA2110",
+        "品名": "扫描仪",
+        "数量": 51,
+        "单价": 9000,
+        "brand_en": "SICK",
+        "product_name_en": "Scanner",
+        "last_updated": "2026-03-27 08:08"
+      }
+    ],
+    "Schneider": [
+      {
+        "品牌": "施耐德",
+        "型号": "EZ710567G",
+        "品名": "断路器",
+        "数量": 300,
+        "单价": 80,
+        "brand_en": "Schneider",
+        "product_name_en": "Circuit Breaker",
+        "last_updated": "2026-03-27 08:08"
+      },
+      {
+        "品牌": "施耐德",
+        "型号": "EZ710568G",
+        "品名": "断路器",
+        "数量": 100,
+        "单价": 100,
+        "brand_en": "Schneider",
+        "product_name_en": "Circuit Breaker",
+        "last_updated": "2026-03-27 08:08"
+      },
+      {
+        "品牌": "施耐德",
+        "型号": "EZ710566G",
+        "品名": "断路器",
+        "数量": 300,
+        "单价": 75,
+        "brand_en": "Schneider",
+        "product_name_en": "Circuit Breaker",
+        "last_updated": "2026-03-27 08:08"
+      }
+    ],
+    "Siemens": [
+      {
+        "品牌": "西门子",
+        "型号": "6ES7221-1BH32-0XB0",
+        "品名": "模块",
+        "数量": 34,
+        "单价": 1500,
+        "brand_en": "Siemens",
+        "product_name_en": "Module",
+        "last_updated": "2026-03-27 08:08"
+      },
+      {
+        "品牌": "西门子",
+        "型号": "6ES7131-6BH01-0BA0",
+        "品名": "模块",
+        "数量": 13,
+        "单价": 1000,
+        "brand_en": "Siemens",
+        "product_name_en": "Module",
+        "last_updated": "2026-03-27 08:08"
+      }
+    ]
+  },
+  "all_items": [
+    {
+      "brand_en": "SICK",
+      "model": "DBS50E-S5EK00500",
+      "product_name_en": "Encoder",
+      "quantity": 8,
+      "price": 4500,
+      "last_updated": "2026-03-27 08:08"
+    },
+    {
+      "brand_en": "SICK",
+      "model": "VT12T-2P430",
+      "product_name_en": "Photoelectric Sensor",
+      "quantity": 17,
+      "price": 1500,
+      "last_updated": "2026-03-27 08:08"
+    },
+    {
+      "brand_en": "SICK",
+      "model": "GL10-P4212",
+      "product_name_en": "Photoelectric Sensor",
+      "quantity": 120,
+      "price": 150,
+      "last_updated": "2026-03-27 08:08"
+    },
+    {
+      "brand_en": "SICK",
+      "model": "DL100-21AA2110",
+      "product_name_en": "Scanner",
+      "quantity": 51,
+      "price": 9000,
+      "last_updated": "2026-03-27 08:08"
+    },
+    {
+      "brand_en": "Schneider",
+      "model": "EZ710567G",
+      "product_name_en": "Circuit Breaker",
+      "quantity": 300,
+      "price": 80,
+      "last_updated": "2026-03-27 08:08"
+    },
+    {
+      "brand_en": "Schneider",
+      "model": "EZ710568G",
+      "product_name_en": "Circuit Breaker",
+      "quantity": 100,
+      "price": 100,
+      "last_updated": "2026-03-27 08:08"
+    },
+    {
+      "brand_en": "Schneider",
+      "model": "EZ710566G",
+      "product_name_en": "Circuit Breaker",
+      "quantity": 300,
+      "price": 75,
+      "last_updated": "2026-03-27 08:08"
+    },
+    {
+      "brand_en": "Siemens",
+      "model": "6ES7221-1BH32-0XB0",
+      "product_name_en": "Module",
+      "quantity": 34,
+      "price": 1500,
+      "last_updated": "2026-03-27 08:08"
+    },
+    {
+      "brand_en": "Siemens",
+      "model": "6ES7131-6BH01-0BA0",
+      "product_name_en": "Module",
+      "quantity": 13,
+      "price": 1000,
+      "last_updated": "2026-03-27 08:08"
+    }
+  ]
+}
