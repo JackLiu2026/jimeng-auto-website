@@ -1,43 +1,552 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-    <title>常州吉盟机电控制系统有限公司</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常州吉盟机电控制系统有限公司 - 专业自动化产品供应商</title>
+    <meta name="description" content="专业自动化产品供应商，提供施耐德、西门子、SICK等品牌现货库存，针对东南亚市场的外贸网站。">
+    
     <style>
-        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #0056b3; }
-        .status { background: #f0f8ff; padding: 20px; border-radius: 10px; margin: 20px 0; }
-        .success { color: green; font-weight: bold; }
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #f8f9fa;
+            --accent-color: #ff6b35;
+            --text-color: #333;
+            --light-text: #666;
+            --border-color: #ddd;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #fff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .logo span {
+            color: var(--accent-color);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color), #003d82);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            background-color: #e55a2b;
+        }
+        
+        /* Main Content */
+        main {
+            padding: 60px 0;
+        }
+        
+        section {
+            margin-bottom: 60px;
+        }
+        
+        h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: var(--primary-color);
+            text-align: center;
+        }
+        
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        /* Inventory Table */
+        .inventory-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            margin-top: 20px;
+        }
+        
+        .inventory-table th {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        
+        .inventory-table td {
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .inventory-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .stock-status {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .stock-in-stock {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .stock-limited {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-card {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-card.whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .contact-card.email {
+            background: var(--primary-color);
+            color: white;
+        }
+        
+        .contact-card.phone {
+            background: var(--accent-color);
+            color: white;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h3 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #999;
+            font-size: 14px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+            
+            .inventory-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+        
+        /* Update Time */
+        .update-time {
+            text-align: center;
+            color: var(--light-text);
+            font-size: 14px;
+            margin-top: 20px;
+            padding: 10px;
+            background: var(--secondary-color);
+            border-radius: 5px;
+        }
+        
+        /* Success Banner */
+        .success-banner {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            text-align: center;
+            border: 1px solid #c3e6cb;
+        }
     </style>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>常州吉盟机电控制系统有限公司</h1>
-    <p><strong>专业自动化产品供应商</strong></p>
-    
-    <div class="status">
-        <p class="success">✅ 网站部署测试成功！</p>
-        <p>时间: 2026-03-27 11:45</p>
-        <p>GitHub Pages部署验证通过</p>
-    </div>
-    
-    <h2>公司简介</h2>
-    <p>常州吉盟机电控制系统有限公司专注于工业自动化领域，为东南亚市场提供施耐德、西门子、SICK等品牌的自动化产品。</p>
-    
-    <h2>核心产品</h2>
-    <ul>
-        <li>施耐德 - 断路器、接触器、PLC模块</li>
-        <li>西门子 - 变频器、自动化控制系统</li>
-        <li>SICK - 编码器、光电传感器、扫描仪</li>
-    </ul>
-    
-    <h2>联系我们</h2>
-    <p>📧 邮箱: sales@jimeng-auto.com</p>
-    <p>📞 电话: +86 519-88888888</p>
-    <p>📱 WhatsApp: +86 13888888888</p>
-    
-    <hr>
-    <p style="color: #666; font-size: 12px;">
-        这是临时测试页面。完整网站正在构建中...
-    </p>
-</body>
-</html>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">吉盟<span>机电</span></a>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#products">产品库存</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="success-banner">
+                <i class="fas fa-check-circle"></i> 网站已成功部署！最后更新: 2026-03-27 11:50
+            </div>
+            
+            <h1>专业自动化产品供应商</h1>
+            <p>常州吉盟机电控制系统有限公司，专注于施耐德、西门子、SICK等国际知名品牌自动化产品的现货供应，为东南亚市场提供优质的产品和服务。</p>
+            <a href="#products" class="cta-button">查看现货库存</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="features">
+            <h2>我们的优势</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>现货库存</h3>
+                    <p>大量施耐德、西门子、SICK品牌产品现货，快速发货，减少您的等待时间。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3>专注东南亚</h3>
+                    <p>针对东南亚市场优化，提供适合当地需求的自动化产品和解决方案。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>专业支持</h3>
+                    <p>专业技术团队提供产品选型、应用支持和售后服务。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>快速物流</h3>
+                    <p>与多家国际物流公司合作，确保货物安全快速送达目的地。</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="products">
+            <h2>现货库存列表</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: var(--light-text);">
+                库存每日更新：08:00, 12:00, 15:00, 17:00 (北京时间)
+            </p>
+            
+            <div class="update-time">
+                <i class="fas fa-sync-alt"></i> 最后更新: 2026-03-27 11:45
+            </div>
+            
+            <table class="inventory-table">
+                <thead>
+                    <tr>
+                        <th>品牌</th>
+                        <th>产品名称</th>
+                        <th>型号</th>
+                        <th>库存数量</th>
+                        <th>单价 (USD)</th>
+                        <th>状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>SICK</strong></td>
+                        <td>编码器</td>
+                        <td>DBS50E-S5EK00500</td>
+                        <td>8</td>
+                        <td>$4,500</td>
+                        <td><span class="stock-status stock-limited">库存有限</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>SICK</strong></td>
+                        <td>光电传感器</td>
+                        <td>VT12T-2P430</td>
+                        <td>17</td>
+                        <td>$1,500</td>
+                        <td><span class="stock-status stock-limited">库存有限</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>SICK</strong></td>
+                        <td>光电传感器</td>
+                        <td>GL10-P4212</td>
+                        <td>120</td>
+                        <td>$150</td>
+                        <td><span class="stock-status stock-in-stock">库存充足</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>SICK</strong></td>
+                        <td>扫描仪</td>
+                        <td>DL100-21AA2110</td>
+                        <td>51</td>
+                        <td>$9,000</td>
+                        <td><span class="stock-status stock-in-stock">库存充足</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>施耐德</strong></td>
+                        <td>断路器</td>
+                        <td>EZ710567G</td>
+                        <td>300</td>
+                        <td>$80</td>
+                        <td><span class="stock-status stock-in-stock">库存充足</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>施耐德</strong></td>
+                        <td>断路器</td>
+                        <td>EZ710568G</td>
+                        <td>100</td>
+                        <td>$100</td>
+                        <td><span class="stock-status stock-in-stock">库存充足</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>施耐德</strong></td>
+                        <td>断路器</td>
+                        <td>EZ710566G</td>
+                        <td>300</td>
+                        <td>$75</td>
+                        <td><span class="stock-status stock-in-stock">库存充足</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>西门子</strong></td>
+                        <td>模块</td>
+                        <td>6ES7221-1BH32-0XB0</td>
+                        <td>34</td>
+                        <td>$1,500</td>
+                        <td><span class="stock-status stock-in-stock">库存充足</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>西门子</strong></td>
+                        <td>模块</td>
+                        <td>6ES7131-6BH01-0BA0</td>
+                        <td>13</td>
+                        <td>$1,000</td>
+                        <td><span class="stock-status stock-limited">库存有限</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="update-time">
+                <i class="fas fa-info-circle"></i> 共9个产品，总库存量: 943个
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>联系我们</h2>
+            <div class="contact-grid">
+                <div class="contact-card whatsapp">
+                    <div class="feature-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <p>+86 13888888888</p>
+                    <p style="margin-top: 10px; opacity: 0.9;">快速响应，支持多语言</p>
+                    <a href="https://wa.me/8613888888888" style="color: white; text-decoration: underline; margin-top: 15px; display: inline-block;">点击直接聊天</a>
+                </div>
+                
+                <div class="contact-card email">
+                    <div class="feature-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>邮箱</h3>
+                    <p>sales@jimeng-auto.com</p>
+                    <p style="margin-top: 10px; opacity: 0.9;">商务合作与技术咨询</p>
+                    <a href="mailto:sales@jimeng-auto.com" style="color: white; text-decoration: underline; margin-top: 15px; display: inline-block;">发送邮件</a>
+                </div>
+                
+                <div class="contact-card phone">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>电话</h3>
+                    <p>+86 519-88888888</p>
+                    <p style="margin-top: 10px; opacity: 0.9;">工作日 9:00-18:00</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <h3>其他联系方式</h3>
+                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 20px;">
+                    <div>
+                        <i class="fab fa-weixin" style="color: #07C160; font-size: 24px;"></i>
+                        <p style="margin-top: 10px;">微信: JimengAuto</p>
+                    </div>
+                    <div>
+                        <i class

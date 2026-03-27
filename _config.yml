@@ -1,0 +1,67 @@
+# Site settings
+title: "常州吉盟机电控制系统有限公司"
+description: "专业自动化产品供应商 - 施耐德、西门子、SICK现货库存"
+baseurl: "/jimeng-auto-website" # the subpath of your site, e.g. /blog
+url: "https://jackliu2026.github.io" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom settings
+company_name: "常州吉盟机电控制系统有限公司"
+company_name_en: "Changzhou Jimeng Electromechanical Control System Co., Ltd."
+slogan: "专业自动化产品供应商"
+slogan_en: "Professional Automation Product Supplier"
+contact_email: "sales@jimeng-auto.com"
+contact_phone: "+86 519-88888888"
+whatsapp: "+86 13888888888"
+zalo: "JimengAuto"
+messenger: "@JimengAuto"
+
+# Language settings
+default_lang: "zh"
+languages: ["zh", "en"]
+
+# Inventory update settings
+inventory_update_times: ["08:00", "12:00", "15:00", "17:00"]
+last_updated: "2026-03-27 11:45"
+
+# SEO settings
+google_analytics: "" # Add your GA tracking ID here
+google_site_verification: "" # Add your Google verification code here
+
+# Social media
+social_links:
+  linkedin: "#"
+  facebook: "#"
+  twitter: "#"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - .gitignore
+  - .clawhub/
+  - .openclaw/
+  - memory/
+  - mingniu-food-website/
+  - projects/
+  - scripts/
+  - skills/
+  - tasks/
+  - *.py
+  - *.js
+  - *.txt
+  - *.yml
+  - *.zip
+  - *.bak
