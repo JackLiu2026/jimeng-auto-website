@@ -1,0 +1,36 @@
+{
+  "project": "吞噬星空第一章",
+  "date": "2026-03-24",
+  "total_duration": 32,
+  "scenes": [
+    {
+      "scene": "校园跑步",
+      "prompt": "A handsome young Chinese man, age 20, athletic build, running on a university campus track in the morning sunlight. He has short black hair, sharp facial features, and a determined expression. Realistic cinematic style,真人拍摄效果,电影质感,阳光明媚的校园",
+      "duration": 5
+    },
+    {
+      "scene": "图书馆觉醒",
+      "prompt": "The same young man sitting in a university library, suddenly experiencing a headache. His eyes glow slightly with a mysterious light. Realistic lighting, emotional expression, subtle supernatural effect. 真人效果,图书馆环境,觉醒时刻",
+      "duration": 6
+    },
+    {
+      "scene": "能力测试",
+      "prompt": "The young man in a quiet training room, testing his new abilities. He demonstrates enhanced strength and perception. Cinematic action, realistic motion, subtle energy effects. 能力展示,训练场景,真人动作",
+      "duration": 7
+    },
+    {
+      "scene": "解决问题",
+      "prompt": "The young man using his abilities to help others in a challenging situation. Confident posture, heroic moment. Realistic urban setting, dramatic lighting. 英雄时刻,都市场景,真人电影效果",
+      "duration": 6
+    },
+    {
+      "scene": "仰望星空",
+      "prompt": "The young man looking up at the starry night sky, contemplating his destiny. Epic cinematic shot,星空背景,深邃的眼神,电影结尾氛围",
+      "duration": 8
+    }
+  ],
+  "output_format": "mp4",
+  "resolution": "1920x1080",
+  "frame_rate": 24,
+  "style": "realistic cinematic,真人拍摄效果"
+}

@@ -1,0 +1,16 @@
+# Ngrok 内网穿透配置
+version: "2"
+authtoken: "你的Ngrok Token"
+
+tunnels:
+  openclaw-feishu:
+    proto: http
+    addr: 18789
+    hostname: "你的自定义域名.ngrok.io"  # 可选
+    region: ap  # 亚太地区
+    
+  # 或者使用随机域名
+  openclaw-random:
+    proto: http
+    addr: 18789
+    region: ap

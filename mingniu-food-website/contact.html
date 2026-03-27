@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在线咨询 - 常州名牛食品有限公司</title>
+    <meta name="description" content="联系我们，获取专业中老年保健品咨询服务。">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-heartbeat"></i> 名牛食品</h1>
+                <p>专业中老年保健品</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+                <li><a href="products.html"><i class="fas fa-pills"></i> 产品中心</a></li>
+                <li><a href="knowledge.html"><i class="fas fa-book-medical"></i> 健康知识</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> 关于我们</a></li>
+                <li><a href="contact.html" class="active"><i class="fas fa-phone-alt"></i> 在线咨询</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 联系页面 -->
+    <section class="contact-page">
+        <div class="container">
+            <h1 class="page-title"><i class="fas fa-phone-alt"></i> 在线咨询</h1>
+            <p class="page-subtitle">专业健康顾问为您解答疑问</p>
+            
+            <!-- 联系信息 -->
+            <div class="contact-info-section">
+                <div class="contact-methods">
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>电话咨询</h3>
+                        <p class="method-number">138-XXXX-XXXX</p>
+                        <p class="method-hours">周一至周五 9:00-18:00</p>
+                        <p class="method-desc">直接与健康顾问沟通</p>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>邮件咨询</h3>
+                        <p class="method-number">service@mingniu.com</p>
+                        <p class="method-hours">24小时内回复</p>
+                        <p class="method-desc">详细问题请发送邮件</p>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>在线表单</h3>
+                        <p class="method-number">填写下方表单</p>
+                        <p class="method-hours">即时提交</p>
+                        <p class="method-desc">快速获取专业建议</p>
+                    </div>
+                    
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>公司地址</h3>
+                        <p class="method-number">江苏省常州市</p>
+                        <p class="method-hours">新北区XXX路XX号</p>
+                        <p class="method-desc">欢迎来访咨询</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 咨询表单 -->
+            <div class="consultation-form-section">
+                <h2><i class="fas fa-edit"></i> 在线咨询表单</h2>
+                <p class="form-intro">请填写以下信息，我们的健康顾问将在24小时内与您联系</p>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> 姓名 *</label>
+                        <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> 联系电话 *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="请输入您的手机号码">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> 电子邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="请输入您的邮箱地址">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age"><i class="fas fa-birthday-cake"></i> 年龄</label>
+                        <select id="age" name="age">
+                            <option value="">请选择年龄范围</option>
+                            <option value="40-50">40-50岁</option>
+                            <option value="51-60">51-60岁</option>
+                            <option value="61-70">61-70岁</option>
+                            <option value="71+">71岁以上</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="product"><i class="fas fa-pills"></i> 咨询产品 *</label>
+                        <select id="product" name="product" required>
+                            <option value="">请选择咨询产品</option>
+                            <option value="q10">辅酶Q10系列</option>
+                            <option value="krill">深海磷虾油系列</option>
+                            <option value="calcium">钙维生素D3片</option>
+                            <option value="lutein">叶黄素软胶囊</option>
+                            <option value="dha">DHA藻油软胶囊</option>
+                            <option value="vitamin">复合维生素片</option>
+                            <option value="other">其他产品</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="purpose"><i class="fas fa-question-circle"></i> 咨询目的</label>
+                        <div class="purpose-options">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="purpose" value="purchase"> 购买咨询
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="purpose" value="usage"> 使用方法
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="purpose" value="effect"> 功效了解
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="purpose" value="price"> 价格咨询
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="purpose" value="other"> 其他问题
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment-dots"></i> 详细咨询内容 *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="请详细描述您的咨询内容，包括健康状况、具体问题等"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="urgency"><i class="fas fa-exclamation-circle"></i> 紧急程度</label>
+                        <div class="urgency-options">
+                            <label class="radio-label">
+                                <input type="radio" name="urgency" value="normal" checked> 一般咨询
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="urgency" value="urgent"> 紧急咨询
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-time"><i class="fas fa-clock"></i> 希望联系时间</label>
+                        <select id="contact-time" name="contact-time">
+                            <option value="">请选择方便联系的时间</option>
+                            <option value="morning">上午 (9:00-12:00)</option>
+                            <option value="afternoon">下午 (14:00-18:00)</option>
+                            <option value="evening">晚上 (18:00-21:00)</option>
+                            <option value="anytime">任何时间都可以</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group consent-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="consent" required>
+                            我同意名牛食品收集我的个人信息用于咨询服务，并已阅读并同意<a href="#" class="privacy-link">隐私政策</a>
+                        </label>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> 提交咨询
+                        </button>
+                        <button type="reset" class="reset-btn">
+                            <i class="fas fa-redo"></i> 重置表单
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- 常见问题 -->
+            <div class="faq-section">
+                <h2><i class="fas fa-question-circle"></i> 常见问题</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>咨询后多久能得到回复？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>我们承诺在收到咨询后的24小时内给予回复。紧急咨询会在4小时内优先处理。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>咨询需要收费吗？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>我们的健康咨询服务是完全免费的。我们的专业健康顾问会为您提供详细的解答和建议。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>可以预约上门咨询吗？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>对于常州市区的客户，我们可以安排上门咨询服务。请提前电话预约，我们的健康顾问会与您确认具体时间。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>如何购买产品？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>您可以通过以下方式购买：1) 电话订购；2) 到公司直接购买；3) 通过授权经销商购买。具体购买方式请咨询我们的客服。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>产品有质量保证吗？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>所有产品都经过严格的质量检测，符合国家相关标准。我们提供完善的质量保证和售后服务。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 地图 -->
+            <div class="map-section">
+                <h2><i class="fas fa-map-marked-alt"></i> 公司位置</h2>
+                <div class="map-placeholder">
+                    <div class="map-content">
+                        <i class="fas fa-map fa-4x"></i>
+                        <h3>常州名牛食品有限公司</h3>
+                        <p>地址：江苏省常州市新北区XXX路XX号</p>
+                        <p>邮编：213000</p>
+                        <p>交通：可乘坐地铁1号线至XX站，步行5分钟即到</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><i class="fas fa-heartbeat"></i> 名牛食品</h3>
+                    <p>关爱健康，品质生活</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <a href="index.html">首页</a>
+                    <a href="products.html">产品中心</a>
+                    <a href="knowledge.html">健康知识</a>
+                    <a href="about.html">关于我们</a>
+                </div>
+                <div class="footer-social">
+                    <h4>关注我们</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-qq"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 常州名牛食品有限公司. 保留所有权利.</p>
+                <p>咨询服务热线：138-XXXX-XXXX | 邮箱：service@mingniu.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ展开/收起功能
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('i');
+                
+                answer.classList.toggle('active');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+        
+        // 表单提交处理
+        const contactForm = document.getElementById('contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // 表单验证
+                const name = document.getElementById('name').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                const product = document.getElementById('product').value;
+                const message = document.getElementById('message').value.trim();
+                const consent = document.querySelector('input[name="consent"]').checked;
+                
+                if (!name || !phone || !product || !message || !consent) {
+                    alert('请填写所有必填项并同意隐私政策');
+                    return;
+                }
+                
+                // 手机号验证
+                const phoneRegex = /^1[3-9]\d{9}$/;
+                if (!phoneRegex.test(phone)) {
+                    alert('请输入有效的手机号码');
+                    return;
+                }
+                
+                // 收集表单数据
+                const formData = new FormData(this);
+                const data = Object.fromEntries(formData);
+                
+                // 显示提交成功消息
+                const successMessage = document.createElement('div');
+                successMessage.className = 'success-message';
+                successMessage.innerHTML = `
+                    <i class="fas fa-check-circle"></i>
+                    <h3>咨询提交成功！</h3>
+                    <p>感谢您的咨询，我们的健康顾问将在24小时内与您联系。</p>
+                    <p>您的咨询编号：MN${Date.now().toString().slice(-8)}</p>
+                    <button onclick="this.parentElement.remove()">关闭</button>
+                `;
+                
+                successMessage.style.cssText = `
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background: white;
+                    padding: 30px;
+                    border-radius: 10px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+                    z-index: 10000;
+                    text-align: center;
+                    max-width: 400px;
+                    width: 90%;
+                `;
+                
+                document.body.appendChild(successMessage);
+                
+                // 重置表单
+                this.reset();
+                
+                // 在实际应用中，这里应该发送到服务器
+                // fetch('/api/contact', {
+                //     method: 'POST',
+                //     headers: { 'Content-Type': 'application/json' },
+                //     body: JSON.stringify(data)
+                // })
+                // .then(response => response.json())
+                // .then(data => {
+                //     showSuccessMessage(data.referenceNumber);
+                //     this.reset();
+                // })
+                // .catch(error => {
+                //     alert('提交失败，请稍后重试');
+                // });
+            });
+        }
+    </script>
+    <style>
+        .contact-page {
+            padding: 60px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .page-title {
+            text-align: center;
+            color: #1a365d;
+            font-size: 36px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .page-subtitle {
+            text-align: center;
+            color: #4a5568;
+            font-size: 18px;
+            margin-bottom: 50px;

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "skills": {
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1774159807914
+    },
+    "security-auditor": {
+      "version": "1.0.0",
+      "installedAt": 1774314547191
+    },
+    "clawdefender": {
+      "version": "1.0.1",
+      "installedAt": 1774314607619
+    },
+    "memory-setup-openclaw": {
+      "version": "1.0.0",
+      "installedAt": 1774325165129
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1774325224298
+    },
+    "n8n-workflow-automation": {
+      "version": "1.0.0",
+      "installedAt": 1774327448250
+    },
+    "wan-image-video-generation-editting": {
+      "version": "1.0.2",
+      "installedAt": 1774403167392
+    }
+  }
+}

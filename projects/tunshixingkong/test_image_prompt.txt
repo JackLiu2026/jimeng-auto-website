@@ -1,0 +1,19 @@
+罗峰形象测试 - 阳刚帅气的中国青年
+
+详细描述：
+- 20岁的中国男性
+- 身高180cm，健壮体型
+- 短发，干净利落
+- 方正的脸型，轮廓分明
+- 明亮的眼睛，坚毅的眼神
+- 穿着现代休闲装
+- 站在大学校园中
+- 阳光明媚的早晨
+- 真人拍摄效果，非动画
+- 电影质感，专业摄影
+
+英文提示词：
+A handsome 20-year-old Chinese man, athletic build, short black hair, sharp facial features, determined expression. Wearing modern casual clothes, standing on a university campus in morning sunlight. Realistic photographic style, cinematic lighting, professional photography,真人效果.
+
+风格关键词：
+realistic, photographic, cinematic, professional, portrait, handsome, athletic, Chinese, university, morning light
